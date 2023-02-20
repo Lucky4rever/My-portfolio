@@ -1,38 +1,116 @@
+@font-face {
+  font-family: Caveat;
+  src: url(./fonts/Caveat/Caveat-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: Ubuntu;
+  src: url(./fonts/Ubuntu/Ubuntu-Regular.ttf);
+}
+
+:root {
+  --background: #F4FFFF;
+  --block-background: #FCE4EC;
+  --text-color: #7E7E7E;
+  --link-gradient: linear-gradient(-30deg, #ee6352, red, #d16e8d);
+
+  --max-height: 2000px;
+}
+
+body {
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  
+  color: var(--text-color);
+  background-color: var(--background);
+  font-family: 'Ubuntu', sans-serif;
+}
+body > * {
+  overflow: hidden;
+  width: 100%;
+}
+
 .App {
-  text-align: center;
+  position:static;
+  height: var(--max-height);
+  width: 90% !important;
+  padding: 0 5%;
+}
+.pea {
+  position: absolute;
+  border-radius: 50%;
+  outline: 1px solid black;
+  z-index: -100;
+  user-select: none;
+}
+.pea > img {
+  position: absolute;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.info-layout {
+  position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  width: 100%;
+  min-height: 275px;
+  top: 150px;
+
+  background: var(--block-background);
+  outline: 3px solid #D5A5A5;
+  border-radius: 25px;
+}
+.info-layout p {
+  margin: 20px;
+}
+
+.skills {
+  margin-top: 100px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: auto !important;
+}
+.title {
+  width: 100%;
+  height: 50px;
+  padding-top: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  font-stretch: expanded;
+  font-size: 40px;
+}
+.title-hr {
+  width: 90%;
+  min-height: 1px;
+  background-color: var(--text-color);
 }
 
-.App-link {
-  color: #61dafb;
+.custom-background {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: var(--max-height);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.gradient-link {
+  text-decoration: none;
+  background-image: var(--link-gradient);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: 0% 3px;
+  transition: background-size 0.5s ease-in-out;
+  font-weight: 800;
+}
+a {
+  color: inherit;
+}
+
+.gradient-link:hover {
+  background-size: 100% 3px;
+  color: inherit;
+}
+
+.all-projects {
+  display: inline-flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 30px 5%;
 }
