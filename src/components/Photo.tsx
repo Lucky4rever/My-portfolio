@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components'
-import photo from '../img/photo.jpg'
+import photo from '../assets/img/photo.jpg'
 
 export const PhotoLayout = styled.div`
     position: absolute;

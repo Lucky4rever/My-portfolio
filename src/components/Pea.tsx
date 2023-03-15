@@ -1,7 +1,3 @@
-import React from 'react';
-import styled from 'styled-components'
-import _ from "lodash";
-
 const Color = [
     'rgb(184, 183, 255)',
     'rgb(255, 183, 183)',
@@ -10,21 +6,27 @@ const Color = [
     'rgb(183, 255, 251)'
 ]
 const Face = [
-    require('../img/pea-smiles/winky.png'),
-    require('../img/pea-smiles/happy.png'),
-    require('../img/pea-smiles/scowly.png'),
-    require('../img/pea-smiles/bemused.png'),
-    require('../img/pea-smiles/headache.png')
+    require('../assets/img/pea-smiles/winky.png'),
+    require('../assets/img/pea-smiles/happy.png'),
+    require('../assets/img/pea-smiles/scowly.png'),
+    require('../assets/img/pea-smiles/bemused.png'),
+    require('../assets/img/pea-smiles/headache.png')
 ]
 
-const Pea = () => {
+export interface Props {
+    key: number
+}
+
+const Pea = ( props: Props ) => {
+    let key = props.key;
+
     let width = Math.random()*40 + 60
     let heigth = width
     let face_width = String(Math.random()*30+40)+'%'
     let face_heigth = face_width
 
     return (
-        <div className='pea' style={{
+        <div className='pea' key={key.toString()} style={{
             left: String(Math.random()*120-20)+'%', 
             top: String(Math.random()*120-20)+'%',
             width: width, 
@@ -32,7 +34,8 @@ const Pea = () => {
             backgroundColor: Color[Math.floor(Math.random()*Color.length)],
             zIndex: Math.floor(Math.random()*60-30)
         }}>
-            <img src={Face[Math.floor(Math.random()*Face.length)]} alt="" style={{
+            <img src={Face[Math.floor(Math.random()*Face.length)]} alt="" 
+            key={key.toString()} style={{
                 left: String(Math.random()*20+10)+'%', 
                 top: String(Math.random()*20+10)+'%',
                 width: face_width, 
@@ -42,23 +45,4 @@ const Pea = () => {
     )
 }
 
-export const PeasLayout = styled.div`
-    position: absolute;
-    width: 100%;
-    height: 100%;
-
-    z-index: 0;
-`;
-
-export const Peas = () => {
-    var peas: string[] = [], i = 0;
-    while (++i <= 50) peas.push("");
-
-    return (
-        <PeasLayout>
-            {_.times(50, () => (
-                <Pea />
-            ))}
-        </PeasLayout>
-    );
-}
+export default Pea;

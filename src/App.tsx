@@ -1,22 +1,20 @@
-import React from 'react';
-import './App.css';
-import { Peas } from './components/Peas';
-import { Skills } from './components/AllSkills';
-import { MyProjects as Projects } from './components/MyProjects';
-import Info from './components/Info';
+import './index.css';
+import { Route, Routes } from 'react-router-dom';
+import { Peas } from './pages';
+import AppRoutes from './AppRoutes';
+import { StrictMode } from 'react';
 
 function App() {
   return (
-    <>
-      <div className='custom-background'>
-        <Peas />
-      </div>
-      <div className="App">
-        <Info />
-        <Skills />
-        <Projects />
-      </div>
-    </>
+    <StrictMode>
+      <Peas />
+      <Routes>
+        {AppRoutes.map((route, index) => {
+          const { element, ...rest } = route;
+          return <Route key={index} {...rest} element={element} />;
+        })}
+      </Routes>
+    </StrictMode>
   );
 }
 

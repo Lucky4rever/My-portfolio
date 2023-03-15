@@ -79,7 +79,7 @@ export const Project = (props: ProjectProps) => {
                 <ProjectPreview>
                     <div>
                         <img src={props.img === undefined ? 
-                            require('../img/something-went-wrong.png') : 
+                            require('../assets/img/something-went-wrong.png') : 
                             props.img} alt='' />
                     </div>
                 </ProjectPreview>

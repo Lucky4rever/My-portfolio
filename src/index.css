@@ -1,13 +1,141 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: Caveat;
+  src: url(./assets/fonts/Caveat/Caveat-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: Ubuntu;
+  src: url(./assets/fonts/Ubuntu/Ubuntu-Regular.ttf);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --background: #F4FFFF;
+  --block-background: #FCE4EC;
+  --border-color: #D5A5A5;
+  --text-color: #7E7E7E;
+  --link-gradient: linear-gradient(-30deg, #ee6352, red, #d16e8d);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--block-background); 
+  border-radius: 10px;
+  border: 3px solid var(--border-color);
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-150%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+html, body {
+  overflow: overlay;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  
+  color: var(--text-color);
+  background-color: var(--background);
+  font-family: 'Ubuntu', sans-serif;
+}
+
+#root {
+  position: relative;
+  overflow: hidden;
+  height: max-content;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.pea {
+  position: absolute;
+  border-radius: 50%;
+  outline: 1px solid black;
+  z-index: -100;
+  user-select: none;
+}
+.pea > img {
+  position: absolute;
+  user-select: none;
+}
+
+.info-layout {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 275px;
+  margin: 30px 7% 60px;
+
+  background: var(--block-background);
+  outline: 3px solid var(--border-color);
+  border-radius: 25px;
+}
+.info-layout p {
+  margin: 20px;
+}
+
+.with-photo {
+  margin-top: 100px;
+}
+
+.skills {
+  justify-content: center;
+  height: auto !important;
+}
+.title {
+  width: 100%;
+  height: 64px;
+  padding-top: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  font-stretch: expanded;
+  font-size: 54px;
+}
+.title-hr {
+  width: 90%;
+  min-height: 1px;
+  background-color: var(--text-color);
+}
+
+.custom-background {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: var(--max-height);
+}
+
+.gradient-link {
+  text-decoration: none;
+  background-image: var(--link-gradient);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: 0% 3px;
+  transition: background-size 0.5s ease-in-out;
+  font-weight: 800;
+}
+a {
+  color: inherit;
+}
+
+.gradient-link:where(:hover, :focus) {
+  background-size: 100% 3px;
+  color: inherit;
+  outline: none;
+}
+
+.all-projects {
+  display: inline-flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 30px 5%;
 }
