@@ -71,18 +71,18 @@ const Header = () => {
     return (
         <HeaderBlock>
             <Navbar>
-                <NavbarBrand href='/Lucky4rever/my-portfolio'>
+                <NavbarBrand href='/my-portfolio'>
                     <Logo src={logo} />
                     <span>Портфоліо</span>
                 </NavbarBrand>
                 <Collapse>
-                    <NavbarItem href='/Lucky4rever/my-portfolio/skills'>
+                    <NavbarItem href='/my-portfolio/skills'>
                         <span>Мої навички</span>
                     </NavbarItem>
-                    <NavbarItem href='/Lucky4rever/my-portfolio/projects'>
+                    <NavbarItem href='/my-portfolio/projects'>
                         <span>Мої проекти</span>
                     </NavbarItem>
-                    <NavbarItem href='/Lucky4rever/my-portfolio/achivements'>
+                    <NavbarItem href='/my-portfolio/achivements'>
                         <span>Мої досягнення</span>
                     </NavbarItem>
                 </Collapse>
