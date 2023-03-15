@@ -61,6 +61,10 @@ const NavbarItem = styled.a`
     transition: 200ms;
     border: 1px solid transparent;
 
+    :active {
+        border: 1px solid transparent;
+    }
+
     :hover, :focus {
         border-left: 1px solid var(--border-color);
         border-right: 1px solid var(--border-color);
