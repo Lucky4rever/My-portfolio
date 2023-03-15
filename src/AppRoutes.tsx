@@ -3,15 +3,15 @@ import { Info, Skills, Projects, PageNotFound } from './pages';
 
 const AppRoutes = [
   {
-    path: 'my-portfolio/',
+    path: '/my-portfolio/',
     element: <><Info /><Header /></>
   },
   {
-    path: 'my-portfolio/skills',
+    path: '/my-portfolio/skills',
     element: <><Skills /><Header /></>
   },
   {
-    path: 'my-portfolio/projects',
+    path: '/my-portfolio/projects',
     element: <><Projects /><Header /></>
   },
   {
