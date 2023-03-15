@@ -3,15 +3,15 @@ import { Info, Skills, Projects, PageNotFound } from './pages';
 
 const AppRoutes = [
   {
-    path: 'Lucky4rever/my-portfolio/',
+    path: 'my-portfolio/',
     element: <><Info /><Header /></>
   },
   {
-    path: 'Lucky4rever/my-portfolio/skills',
+    path: 'my-portfolio/skills',
     element: <><Skills /><Header /></>
   },
   {
-    path: 'Lucky4rever/my-portfolio/projects',
+    path: 'my-portfolio/projects',
     element: <><Projects /><Header /></>
   },
   {
