@@ -13,6 +13,11 @@ const HeaderBlock = styled.header`
 
     background: var(--block-background);
     outline: 3px solid var(--border-color);
+
+    @media (max-width: 768px) {
+        top: calc(100% - 50px);
+        height: 50px;
+    }
 `;
 
 const Navbar = styled.nav`
@@ -27,6 +32,7 @@ const Navbar = styled.nav`
 `;
 
 const Collapse = styled.div`
+    box-sizing: border-box;
     width: 60%;
     display: inline-flex;
     flex-direction: row;
@@ -65,6 +71,7 @@ const NavbarBrand = styled.a`
 `;
 
 const NavbarItem = styled.a`
+    box-sizing: border-box;
     width: 180px;
     display: flex;
     align-items: center;
@@ -74,6 +81,7 @@ const NavbarItem = styled.a`
     text-decoration: none;
     transition: 200ms;
     outline: 1px solid transparent !important;
+    border: 1px solid transparent;
 
     :hover, :focus {
         border-left: 1px solid var(--border-color);

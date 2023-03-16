@@ -1,11 +1,5 @@
 import styled from 'styled-components';
-
-export interface ProjectProps {
-    key: number;
-    img: any;
-    link: string | undefined;
-    description: string | "";
-}
+import { ProjectProps } from '../utils';
 
 const ProjectTyle = styled.div`
     box-sizing: border-box;
@@ -17,12 +11,6 @@ const ProjectTyle = styled.div`
     transition: 0.3s;
     background-color: var(--block-background);
     outline: 1px solid var(--text-color);
-
-    :hover {
-        outline: 2px solid var(--text-color);
-        filter: drop-shadow(0px 5px 4px rgba(0, 0, 0, 0.25));
-        transform: translateY(-5px);
-    }
     
     @media (max-width: 768px) {
         width: calc(100% - 20px);
@@ -86,7 +74,7 @@ const Reference = styled.a`
 
 const Project = (props: ProjectProps) => {
     return (
-        <ProjectTyle>
+        <ProjectTyle className={props.link === undefined ? "" : "hoverable"}>
             <Reference href={props.link}>
                 <ProjectPreview>
                     <div>

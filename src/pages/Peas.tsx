@@ -1,5 +1,6 @@
 import styled from 'styled-components'
-import {Pea, type PeaProps } from '../components';
+import { Pea } from '../components';
+import { PeaProps } from '../utils';
 
 export const PeasLayout = styled.div`
     position: absolute;

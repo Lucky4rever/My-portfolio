@@ -1,5 +1,5 @@
-import Header from './components/Header';
-import { Info, Skills, Projects, PageNotFound } from './pages';
+import { Header } from './components';
+import { Info, Skills, Projects, PageNotFound, Achivements } from './pages';
 
 const AppRoutes = [
   {
@@ -13,6 +13,10 @@ const AppRoutes = [
   {
     path: '/my-portfolio/projects',
     element: <><Projects /><Header /></>
+  },
+  {
+    path: '/my-portfolio/achivements',
+    element: <><Achivements /><Header /></>
   },
   {
     path: '*',

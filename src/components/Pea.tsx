@@ -1,20 +1,5 @@
-const Color = [
-    'rgb(184, 183, 255)',
-    'rgb(255, 183, 183)',
-    'rgb(255, 248, 183)',
-    'rgb(189, 255, 183)',
-    'rgb(183, 255, 251)'
-]
-const Face = [
-    require('../assets/img/pea-smiles/winky.png'),
-    require('../assets/img/pea-smiles/happy.png'),
-    require('../assets/img/pea-smiles/scowly.png'),
-    require('../assets/img/pea-smiles/bemused.png')
-]
+import { PeaColor, PeaFace, PeaProps } from "../utils";
 
-export interface PeaProps {
-    key: number
-}
 
 const Pea = ( props: PeaProps ) => {
     let key = props.key;
@@ -30,10 +15,10 @@ const Pea = ( props: PeaProps ) => {
             top: String(Math.random()*120-20)+'%',
             width: width, 
             height: heigth, 
-            backgroundColor: Color[Math.floor(Math.random()*Color.length)],
+            backgroundColor: PeaColor[Math.floor(Math.random()*PeaColor.length)],
             zIndex: Math.floor(Math.random()*60-30)
         }}>
-            <img src={Face[Math.floor(Math.random()*Face.length)]} alt="" 
+            <img src={PeaFace[Math.floor(Math.random()*PeaFace.length)]} alt="" 
             key={key.toString()} style={{
                 left: String(Math.random()*20+10)+'%', 
                 top: String(Math.random()*20+10)+'%',
