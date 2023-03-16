@@ -1,6 +1,7 @@
-import React from 'react';
 import styled from 'styled-components';
-import logo from '../assets/img/L.png';
+import achivements from '../assets/img/achivements.png';
+import skills from '../assets/img/skills.png';
+import projects from '../assets/img/projects.png';
 
 const HeaderBlock = styled.header`
     position: fixed;
@@ -19,6 +20,10 @@ const Navbar = styled.nav`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+    @media (max-width: 768px) {
+        width: 90%;
+    }
 `;
 
 const Collapse = styled.div`
@@ -30,8 +35,12 @@ const Collapse = styled.div`
 `;
 
 const Logo = styled.img`
-    width: 50px;
-    height: 50px;
+    display: none;
+    width: 40px;
+    height: 40px;
+    @media (max-width: 768px) {
+        display: block;
+    }
 `;
 
 const NavbarBrand = styled.a`
@@ -42,11 +51,16 @@ const NavbarBrand = styled.a`
     width: fit-content;
     text-decoration: none;
     user-select: none;
+    outline: 1px solid transparent !important;
 
     > span {
         display: block;
         font-size: 28px;
+        font-weight: bold;
         height: fit-content;
+        @media (max-width: 500px) {
+            font-size: 20px;
+        }
     }
 `;
 
@@ -59,15 +73,17 @@ const NavbarItem = styled.a`
     font-size: 20px;
     text-decoration: none;
     transition: 200ms;
-    border: 1px solid transparent;
-
-    :active {
-        border: 1px solid transparent;
-    }
+    outline: 1px solid transparent !important;
 
     :hover, :focus {
         border-left: 1px solid var(--border-color);
         border-right: 1px solid var(--border-color);
+    }
+    > span {
+        display: block;
+        @media (max-width: 768px) {
+            display: none;
+        }
     }
 `;
  
@@ -76,18 +92,20 @@ const Header = () => {
         <HeaderBlock>
             <Navbar>
                 <NavbarBrand href='/my-portfolio'>
-                    <Logo src={logo} />
                     <span>Портфоліо</span>
                 </NavbarBrand>
                 <Collapse>
                     <NavbarItem href='/my-portfolio/skills'>
-                        <span>Мої навички</span>
+                    <Logo src={skills} />
+                        <span>Навички</span>
                     </NavbarItem>
                     <NavbarItem href='/my-portfolio/projects'>
-                        <span>Мої проекти</span>
+                    <Logo src={projects} />
+                        <span>Проекти</span>
                     </NavbarItem>
                     <NavbarItem href='/my-portfolio/achivements'>
-                        <span>Мої досягнення</span>
+                    <Logo src={achivements} />
+                        <span>Досягнення</span>
                     </NavbarItem>
                 </Collapse>
             </Navbar>

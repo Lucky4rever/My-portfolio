@@ -9,15 +9,14 @@ const Face = [
     require('../assets/img/pea-smiles/winky.png'),
     require('../assets/img/pea-smiles/happy.png'),
     require('../assets/img/pea-smiles/scowly.png'),
-    require('../assets/img/pea-smiles/bemused.png'),
-    require('../assets/img/pea-smiles/headache.png')
+    require('../assets/img/pea-smiles/bemused.png')
 ]
 
-export interface Props {
+export interface PeaProps {
     key: number
 }
 
-const Pea = ( props: Props ) => {
+const Pea = ( props: PeaProps ) => {
     let key = props.key;
 
     let width = Math.random()*40 + 60

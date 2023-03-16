@@ -1,0 +1,1 @@
+export { default as MySkills, type SkillProps } from "./Skills";

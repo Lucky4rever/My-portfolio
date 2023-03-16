@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import Pea, { Props } from '../components/Pea';
+import {Pea, type PeaProps } from '../components';
 
 export const PeasLayout = styled.div`
     position: absolute;
@@ -13,7 +13,7 @@ export const Peas = () => {
     let count = 20;
     var peas: JSX.Element[] = [], i = 0;
     while (++i <= count) {
-        let key: Props = { key: i };
+        let key: PeaProps = { key: i };
         peas.push(Pea(key));
     }
 

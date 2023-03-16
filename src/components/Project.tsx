@@ -1,18 +1,14 @@
-import React from 'react';
 import styled from 'styled-components';
 
-export default class ProjectProps {
+export interface ProjectProps {
+    key: number;
     img: any;
     link: string | undefined;
-    description: string = "";
-    constructor (img: string, link: string | undefined, description: string) {
-        this.img = img;
-        this.link = link;
-        this.description = description;
-    }
+    description: string | "";
 }
 
 const ProjectTyle = styled.div`
+    box-sizing: border-box;
     width: calc(44% - 20px);
     border-radius: 15px;
     margin: 0 3% 20px;
@@ -21,16 +17,15 @@ const ProjectTyle = styled.div`
     transition: 0.3s;
     background-color: var(--block-background);
     outline: 1px solid var(--text-color);
-    > a {
-        display: inline-flex;
-        flex-direction: row;
-        width: 100%;
-        height: 100%;
-    }
+
     :hover {
         outline: 2px solid var(--text-color);
         filter: drop-shadow(0px 5px 4px rgba(0, 0, 0, 0.25));
         transform: translateY(-5px);
+    }
+    
+    @media (max-width: 768px) {
+        width: calc(100% - 20px);
     }
 `;
 
@@ -65,14 +60,31 @@ const ProjectDescription = styled.div`
         height: fit-content;
         margin auto 0;
         overflow: hidden;
+
+        
+        @media (min-width: 520px) and (max-width: 768px) {
+            font-size: 20px;
+        }
     }
 `;
 
 const Reference = styled.a`
-    text-decoration: inherit;
+    display: inline-flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+
+    text-decoration: none;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        > div {
+            width: 100% !important;
+        }
+    }
 `;
 
-export const Project = (props: ProjectProps) => {
+const Project = (props: ProjectProps) => {
     return (
         <ProjectTyle>
             <Reference href={props.link}>
@@ -93,3 +105,5 @@ export const Project = (props: ProjectProps) => {
         </ProjectTyle>
     );
 }
+
+export default Project;

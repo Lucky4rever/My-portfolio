@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from 'styled-components'
 import photo from '../assets/img/photo.jpg'
 
@@ -49,13 +48,23 @@ export const PhotoLayout = styled.div`
       
         color: #000000;
     }
+    
+    @media (max-width: 1200px) {
+        left: calc(98% - 250px);
+    }
+    
+    @media (max-width: 976px) {
+        display: none;
+    }
 `;
 
-export const Photo = () => { 
+const Photo = () => { 
     return (
         <PhotoLayout>
             <img src={photo} alt='' />
             <span>Снігур Павло</span>
         </PhotoLayout>
     )
-}
+};
+
+export default Photo;

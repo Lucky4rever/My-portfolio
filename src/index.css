@@ -139,3 +139,10 @@ a {
   width: 90%;
   margin: 30px 5%;
 }
+
+@media screen and (max-width: 768px) {
+  .title {
+    height: 38px;
+    font-size: 28px;
+  }
+}

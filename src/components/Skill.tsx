@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { type SkillProps } from '../utils';
 
 class Lvl {
     size: number;
@@ -23,14 +24,6 @@ const knowledgeLvls = new Array<Lvl>(
     new Lvl(100, 16),
     new Lvl(150, 24)
 );
-
-interface Props {
-    name: string,
-    img: any,
-    lvl: number,
-    top: number,
-    left: number
-}
 
 const Coin = styled.div`
     display: inline-flex;
@@ -59,21 +52,24 @@ const Coin = styled.div`
     }
     > div {
         display: block;
-        justify-content: center;
+        width: 100%;
         margin: auto;
+
+        justify-content: center;
         text-align: center;
         transform: rotateY(180deg);
+        font-size: 40%;
         backface-visibility: hidden;
         color: #000000;
     }
 `;
 
-export default class Skill extends React.Component {
+export default class Skill extends React.Component<SkillProps> {
     name: string = "";
     img: any | null = null;
     lvl: Lvl | null = null;
     layout: Layout = new Layout(0, 0);
-    constructor(props: Props) {
+    constructor(props: SkillProps) {
         super(props);
         this.name = props.name;
         this.img = props.img;
@@ -84,8 +80,9 @@ export default class Skill extends React.Component {
     render() {
         return (
             <Coin style={{
-                maxWidth: String(this.lvl?.size! / 8)+'%',
-                height: String(this.lvl?.size! / 5)+'%',
+                width: String(this.lvl?.size! / 8)+'%',
+                height: "fit-content",
+                // maxHeight: String(this.lvl?.size! / 5)+'%',
                 fontSize: this.lvl?.fontSize,
                 left: String(this.layout?.left)+'%',
                 top: String(this.layout?.top)+'%'

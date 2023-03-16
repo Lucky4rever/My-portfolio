@@ -1,10 +1,13 @@
 import { useEffect } from 'react';
 import styled from 'styled-components';
-import { Photo } from '../components/Photo';
+import { Photo } from '../components';
 
 const InfoLine = styled.p`
     font-size: 30px;
     display: block;
+    @media (max-width: 768px) {
+        font-size: 20px;
+    }
 `;
 
 function Info() {
