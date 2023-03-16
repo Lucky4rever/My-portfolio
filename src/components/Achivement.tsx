@@ -11,11 +11,6 @@ const AchivementTyle = styled.div`
     transition: 0.3s;
     background-color: var(--block-background);
     outline: 1px solid var(--text-color);
-
-    :hover {
-        filter: drop-shadow(0px 5px 4px rgba(0, 0, 0, 0.25));
-        transform: translateY(-5px);
-    }
 `;
 
 const AchivementPreview = styled.div`

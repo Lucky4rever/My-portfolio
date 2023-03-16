@@ -19,10 +19,10 @@ const SkillsContainer = styled.div`
     @media (max-width: 550px) {
         max-height: 250px;
     }
-    @media (max-width: 470px) {
+    @media (max-width: 460px) {
         max-height: 200px;
     }
-    @media (max-width: 370px) {
+    @media (max-width: 360px) {
         max-height: 150px;
     }
 `;
