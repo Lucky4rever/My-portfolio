@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.4ab402a0.css",
-    "main.js": "/my-portfolio/static/js/main.cc421a45.js",
+    "main.css": "/my-portfolio/static/css/main.f2d9c6b3.css",
+    "main.js": "/my-portfolio/static/js/main.44552792.js",
     "static/js/787.128fc6e9.chunk.js": "/my-portfolio/static/js/787.128fc6e9.chunk.js",
+    "static/media/INT20H-2023.png": "/my-portfolio/static/media/INT20H-2023.21ed93c2e8e8aff6917b.png",
     "static/media/node.png": "/my-portfolio/static/media/node.ae9589a989fc017200d2.png",
     "static/media/Caveat-VariableFont_wght.ttf": "/my-portfolio/static/media/Caveat-VariableFont_wght.834178e16d110b21c85e.ttf",
     "static/media/three_ico_large-playstore.png": "/my-portfolio/static/media/three_ico_large-playstore.25834021b4e62e1b266a.png",
@@ -35,12 +36,12 @@
     "static/media/Bootstrap.png": "/my-portfolio/static/media/Bootstrap.772c1187fec10647bbc9.png",
     "static/media/achivements.png": "/my-portfolio/static/media/achivements.747dd133759ed002e843.png",
     "index.html": "/my-portfolio/index.html",
-    "main.4ab402a0.css.map": "/my-portfolio/static/css/main.4ab402a0.css.map",
-    "main.cc421a45.js.map": "/my-portfolio/static/js/main.cc421a45.js.map",
+    "main.f2d9c6b3.css.map": "/my-portfolio/static/css/main.f2d9c6b3.css.map",
+    "main.44552792.js.map": "/my-portfolio/static/js/main.44552792.js.map",
     "787.128fc6e9.chunk.js.map": "/my-portfolio/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4ab402a0.css",
-    "static/js/main.cc421a45.js"
+    "static/css/main.f2d9c6b3.css",
+    "static/js/main.44552792.js"
   ]
 }
