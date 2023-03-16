@@ -1,14 +1,13 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.c223a64d.css",
-    "main.js": "/my-portfolio/static/js/main.f5820c20.js",
+    "main.css": "/my-portfolio/static/css/main.4ab402a0.css",
+    "main.js": "/my-portfolio/static/js/main.cc421a45.js",
     "static/js/787.128fc6e9.chunk.js": "/my-portfolio/static/js/787.128fc6e9.chunk.js",
     "static/media/node.png": "/my-portfolio/static/media/node.ae9589a989fc017200d2.png",
     "static/media/Caveat-VariableFont_wght.ttf": "/my-portfolio/static/media/Caveat-VariableFont_wght.834178e16d110b21c85e.ttf",
     "static/media/three_ico_large-playstore.png": "/my-portfolio/static/media/three_ico_large-playstore.25834021b4e62e1b266a.png",
     "static/media/React.png": "/my-portfolio/static/media/React.2f2532db663fd5ec5f95.png",
     "static/media/Ubuntu-Regular.ttf": "/my-portfolio/static/media/Ubuntu-Regular.1cbb1b79a23478cc89ad.ttf",
-    "static/media/L.png": "/my-portfolio/static/media/L.73db95e9bab3cf2617fc.png",
     "static/media/AS.png": "/my-portfolio/static/media/AS.2a12492fc9378feb6d14.png",
     "static/media/VSCode.png": "/my-portfolio/static/media/VSCode.9bc6e588b5f2b867a8a4.png",
     "static/media/VS.png": "/my-portfolio/static/media/VS.638c7964df4c7ed6a20d.png",
@@ -25,7 +24,6 @@
     "static/media/winky.png": "/my-portfolio/static/media/winky.0431241c8b0504328c5c.png",
     "static/media/photo.jpg": "/my-portfolio/static/media/photo.8e07fb51e15d38032acb.jpg",
     "service-worker.js": "/my-portfolio/service-worker.js",
-    "static/media/headache.png": "/my-portfolio/static/media/headache.e0050a2c5c7d06ae561e.png",
     "static/media/arduino.png": "/my-portfolio/static/media/arduino.e91077964f0d2f050d37.png",
     "static/media/scowly.png": "/my-portfolio/static/media/scowly.fef9ef73ec541718707d.png",
     "static/media/Swift.png": "/my-portfolio/static/media/Swift.fedcfb98d3e3d44c00d6.png",
@@ -33,14 +31,16 @@
     "static/media/Cplusplus.png": "/my-portfolio/static/media/Cplusplus.1240ce157b70fb399c6c.png",
     "static/media/happy.png": "/my-portfolio/static/media/happy.a9bc05126f6263b1f7ae.png",
     "static/media/TS.png": "/my-portfolio/static/media/TS.0f1cc93b573e0ea540dc.png",
+    "static/media/skills.png": "/my-portfolio/static/media/skills.83abf37686085fa92657.png",
     "static/media/Bootstrap.png": "/my-portfolio/static/media/Bootstrap.772c1187fec10647bbc9.png",
+    "static/media/achivements.png": "/my-portfolio/static/media/achivements.747dd133759ed002e843.png",
     "index.html": "/my-portfolio/index.html",
-    "main.c223a64d.css.map": "/my-portfolio/static/css/main.c223a64d.css.map",
-    "main.f5820c20.js.map": "/my-portfolio/static/js/main.f5820c20.js.map",
+    "main.4ab402a0.css.map": "/my-portfolio/static/css/main.4ab402a0.css.map",
+    "main.cc421a45.js.map": "/my-portfolio/static/js/main.cc421a45.js.map",
     "787.128fc6e9.chunk.js.map": "/my-portfolio/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c223a64d.css",
-    "static/js/main.f5820c20.js"
+    "static/css/main.4ab402a0.css",
+    "static/js/main.cc421a45.js"
   ]
 }
