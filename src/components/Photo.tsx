@@ -6,7 +6,7 @@ export const PhotoLayout = styled.div`
     width: 250px;
     height: 300px;
     left: calc(90% - 250px);
-    top: -80px;
+    top: -40px;
 
     background: #F5F5F5;
     border: 1px solid #000000;

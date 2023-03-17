@@ -5,7 +5,8 @@ import projects from '../assets/img/projects.png';
 
 const HeaderBlock = styled.header`
     position: fixed;
-    top: calc(100% - 60px);
+    // top: calc(100% - 60px);
+    top: 0px;
     height: 60px;
     width: 100%;
     display: flex;
@@ -15,7 +16,8 @@ const HeaderBlock = styled.header`
     outline: 3px solid var(--border-color);
 
     @media (max-width: 768px) {
-        top: calc(100% - 50px);
+        // top: calc(100% - 50px);
+        top: 0px;
         height: 50px;
     }
 `;

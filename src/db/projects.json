@@ -1,0 +1,15 @@
+{
+    "label": "projects",
+    "children": [
+        {
+            "img": "/my-portfolio/static/media/test_task_hello_Evano.19b553b015642bb117c1.png", 
+            "link": "https://lucky4rever.github.io/Test-task-Hello-Evano/",
+            "description": "Проект на замовлення, зроблений Pixel-Perfect версткою."
+        },
+        {
+            "img": "/my-portfolio/static/media/three_ico_large-playstore.25834021b4e62e1b266a.png",
+            "link": null,
+            "description": "Невеликий пет-проект, написаний на Kotlin."
+        }
+    ]
+}

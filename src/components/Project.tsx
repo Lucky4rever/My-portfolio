@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { ProjectProps } from '../utils';
+import img from '../assets/img/projects/three_ico_large-playstore.png'
 
 const ProjectTyle = styled.div`
     box-sizing: border-box;
@@ -20,21 +21,24 @@ const ProjectTyle = styled.div`
 const ProjectPreview = styled.div`
     display: flex;
     border-radius: 5px;
-    width: 50%;
-    hegth: 100%;
+    width: fit-content;
+    max-width: 50%;
 
     align-items: center;
     justify-content: center;
     overflow: hidden;
     object-fit: contain;
     >div {
-        width: max-content;
-        hegth: 100%;
+        heght: 100%;
         >img {
             border-radius: 10px;
-            hegth: max-content;
+            max-heght: 300px;
             width: 100%;
         }
+    }
+
+    @media (max-width: 768px) {
+        max-width: 100%;
     }
 `;
 
@@ -73,20 +77,19 @@ const Reference = styled.a`
 `;
 
 const Project = (props: ProjectProps) => {
+        console.log(img)
     return (
-        <ProjectTyle className={props.link === undefined ? "" : "hoverable"}>
-            <Reference href={props.link}>
+        <ProjectTyle className={props.link === null ? "" : "hoverable"}>
+            <Reference href={props.link ?? undefined}>
                 <ProjectPreview>
                     <div>
-                        <img src={props.img === undefined ? 
-                            require('../assets/img/something-went-wrong.png') : 
-                            props.img} alt='' />
+                        <img src={props.img} alt='' />
                     </div>
                 </ProjectPreview>
                 <ProjectDescription>
                     <span>
                         {props.description}
-                        {props.link === undefined ? (<b>(Посилання відсутнє)</b>) : ''}
+                        {props.link === null ? (<b>(Посилання відсутнє)</b>) : ''}
                     </span>
                 </ProjectDescription>
             </Reference>

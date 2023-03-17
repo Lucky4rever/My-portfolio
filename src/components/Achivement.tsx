@@ -16,8 +16,8 @@ const AchivementTyle = styled.div`
 const AchivementPreview = styled.div`
     display: flex;
     border-radius: 5px;
-    width: 50%;
-    hegth: 100%;
+    width: fit-content;
+    height: 100%;
 
     align-items: center;
     justify-content: center;
@@ -25,27 +25,27 @@ const AchivementPreview = styled.div`
     object-fit: contain;
     >div {
         width: max-content;
-        hegth: 100%;
+        height: 100%;
         >img {
             border-radius: 10px;
-            hegth: max-content;
             width: 100%;
             max-width: 40vw;
+            max-height: 300px;
         }
     }
 `;
 
 const AchivementDescription = styled.div`
-    width: 50%;
+    width: max-content;
     text-decoration: inherit;
     display: flex;
     vertical-align: middle;
     > span {
         display: block;
-        height: fit-content;
+        height: 100%;
+        padding: 3%;
         margin auto 0;
         overflow: hidden;
-
         
         @media (min-width: 520px) and (max-width: 768px) {
             font-size: 20px;
@@ -71,19 +71,17 @@ const Reference = styled.a`
 
 const Achivement = (props: AchivementProps) => {
     return (
-        <AchivementTyle className={props.link === undefined ? "" : "hoverable"}>
-            <Reference href={props.link}>
+        <AchivementTyle className={props.link === null ? "" : "hoverable"}>
+            <Reference href={props.link ?? undefined}>
                 <AchivementPreview>
                     <div>
-                        <img src={props.img === undefined ? 
-                            require('../assets/img/something-went-wrong.png') : 
-                            props.img} alt='' />
+                        <img src={props.img} alt='' />
                     </div>
                 </AchivementPreview>
                 <AchivementDescription>
                     <span>
                         {props.description}
-                        {props.link === undefined ? (<b>(Посилання відсутнє)</b>) : ''}
+                        {props.link === null ? (<b>(Посилання відсутнє)</b>) : ''}
                     </span>
                 </AchivementDescription>
             </Reference>

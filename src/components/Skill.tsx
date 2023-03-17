@@ -38,7 +38,7 @@ const Coin = styled.div`
     }
 
     background: #FFFFFF;
-    outline: 1px solid black;
+    outline: 2px solid var(--text-color);
     > img {
         position: absolute;
         top: 0;
@@ -58,9 +58,16 @@ const Coin = styled.div`
         justify-content: center;
         text-align: center;
         transform: rotateY(180deg);
-        font-size: 40%;
+        font-size: 100%;
         backface-visibility: hidden;
         color: #000000;
+
+    }
+    @media (max-width: 768px) {
+        outline: 1px solid var(--text-color);
+        > div {
+            font-size: 50%;
+        }
     }
 `;
 

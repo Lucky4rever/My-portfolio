@@ -74,7 +74,7 @@ html, body {
   display: flex;
   flex-direction: column;
   min-height: 275px;
-  margin: 30px 7% 60px;
+  margin: 70px 7% 30px;
 
   background: var(--block-background);
   outline: 3px solid var(--border-color);
@@ -85,7 +85,7 @@ html, body {
 }
 
 .with-photo {
-  margin-top: 100px;
+  margin-top: 110px;
 }
 
 .skills {

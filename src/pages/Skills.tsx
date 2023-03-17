@@ -27,6 +27,16 @@ const SkillsContainer = styled.div`
     }
 `;
 
+const InfoLine = styled.p`
+    font-size: 30px;
+    display: block;
+    margin: 10px !important;
+
+    @media (max-width: 768px) {
+        font-size: 20px;
+    }
+`;
+
 export const Skills = () => {
     useEffect(() => {
         document.title = 'Навички';
@@ -36,6 +46,7 @@ export const Skills = () => {
         <div className='info-layout skills'>
             <div className='title'>Мої навички</div>
             <hr className='title-hr' />
+
             <div style={{display: "flex", justifyContent: "center"}}>
                 <SkillsContainer>
                     {MySkills.map(prop => {
@@ -43,6 +54,10 @@ export const Skills = () => {
                     })}
                 </SkillsContainer>
             </div>
+
+            <InfoLine>Великі - те, в чому я впевнений, що можу реалізувати завдання</InfoLine>
+            <InfoLine>Середні - те, чим я користувався достатньо довго, але в чому я неповністю певен</InfoLine>
+            <InfoLine>Малі - те, з чим я лише знайомий/користувався нетривалий час</InfoLine>
         </div>
     )
 };
