@@ -1,9 +1,8 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.f2d9c6b3.css",
-    "main.js": "/my-portfolio/static/js/main.199adb4a.js",
+    "main.css": "/my-portfolio/static/css/main.ba615199.css",
+    "main.js": "/my-portfolio/static/js/main.06703a07.js",
     "static/js/787.128fc6e9.chunk.js": "/my-portfolio/static/js/787.128fc6e9.chunk.js",
-    "static/media/INT20H-2023.png": "/my-portfolio/static/media/INT20H-2023.21ed93c2e8e8aff6917b.png",
     "static/media/node.png": "/my-portfolio/static/media/node.ae9589a989fc017200d2.png",
     "static/media/Caveat-VariableFont_wght.ttf": "/my-portfolio/static/media/Caveat-VariableFont_wght.834178e16d110b21c85e.ttf",
     "static/media/three_ico_large-playstore.png": "/my-portfolio/static/media/three_ico_large-playstore.25834021b4e62e1b266a.png",
@@ -15,7 +14,6 @@
     "static/media/Csharp.png": "/my-portfolio/static/media/Csharp.5a3ea41e0b6b83784311.png",
     "static/media/MsSQL.png": "/my-portfolio/static/media/MsSQL.753c3adb40e9d68fb78e.png",
     "static/media/HTML-CSS.png": "/my-portfolio/static/media/HTML-CSS.c93c3ff60a928c21d6c8.png",
-    "static/media/test_task_hello_Evano.png": "/my-portfolio/static/media/test_task_hello_Evano.19b553b015642bb117c1.png",
     "static/media/dotnet.png": "/my-portfolio/static/media/dotnet.01f7eca4f6c5f12c9716.png",
     "static/media/SASS.png": "/my-portfolio/static/media/SASS.a2591e27bc692562995c.png",
     "static/media/JetBrains-IntelliJ-IDEA.png": "/my-portfolio/static/media/JetBrains-IntelliJ-IDEA.20f6369c0748dc7dbb3f.png",
@@ -28,7 +26,6 @@
     "static/media/arduino.png": "/my-portfolio/static/media/arduino.e91077964f0d2f050d37.png",
     "static/media/scowly.png": "/my-portfolio/static/media/scowly.fef9ef73ec541718707d.png",
     "static/media/Swift.png": "/my-portfolio/static/media/Swift.fedcfb98d3e3d44c00d6.png",
-    "static/media/something-went-wrong.png": "/my-portfolio/static/media/something-went-wrong.29ddbacf30211683cf87.png",
     "static/media/Cplusplus.png": "/my-portfolio/static/media/Cplusplus.1240ce157b70fb399c6c.png",
     "static/media/happy.png": "/my-portfolio/static/media/happy.a9bc05126f6263b1f7ae.png",
     "static/media/TS.png": "/my-portfolio/static/media/TS.0f1cc93b573e0ea540dc.png",
@@ -36,12 +33,12 @@
     "static/media/Bootstrap.png": "/my-portfolio/static/media/Bootstrap.772c1187fec10647bbc9.png",
     "static/media/achivements.png": "/my-portfolio/static/media/achivements.747dd133759ed002e843.png",
     "index.html": "/my-portfolio/index.html",
-    "main.f2d9c6b3.css.map": "/my-portfolio/static/css/main.f2d9c6b3.css.map",
-    "main.199adb4a.js.map": "/my-portfolio/static/js/main.199adb4a.js.map",
+    "main.ba615199.css.map": "/my-portfolio/static/css/main.ba615199.css.map",
+    "main.06703a07.js.map": "/my-portfolio/static/js/main.06703a07.js.map",
     "787.128fc6e9.chunk.js.map": "/my-portfolio/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f2d9c6b3.css",
-    "static/js/main.199adb4a.js"
+    "static/css/main.ba615199.css",
+    "static/js/main.06703a07.js"
   ]
 }
