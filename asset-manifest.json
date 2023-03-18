@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/my-portfolio/static/css/main.2305a70e.css",
-    "main.js": "/my-portfolio/static/js/main.ab1b6fb2.js",
+    "main.js": "/my-portfolio/static/js/main.c320a0ab.js",
     "static/js/787.128fc6e9.chunk.js": "/my-portfolio/static/js/787.128fc6e9.chunk.js",
     "static/media/node.png": "/my-portfolio/static/media/node.ae9589a989fc017200d2.png",
     "static/media/Caveat-VariableFont_wght.ttf": "/my-portfolio/static/media/Caveat-VariableFont_wght.834178e16d110b21c85e.ttf",
@@ -33,11 +33,11 @@
     "static/media/achivements.png": "/my-portfolio/static/media/achivements.747dd133759ed002e843.png",
     "index.html": "/my-portfolio/index.html",
     "main.2305a70e.css.map": "/my-portfolio/static/css/main.2305a70e.css.map",
-    "main.ab1b6fb2.js.map": "/my-portfolio/static/js/main.ab1b6fb2.js.map",
+    "main.c320a0ab.js.map": "/my-portfolio/static/js/main.c320a0ab.js.map",
     "787.128fc6e9.chunk.js.map": "/my-portfolio/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2305a70e.css",
-    "static/js/main.ab1b6fb2.js"
+    "static/js/main.c320a0ab.js"
   ]
 }
