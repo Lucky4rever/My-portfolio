@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { MySkills } from '../utils'
 import styled from 'styled-components';
 import { Skill } from '../components';
+import { Language } from "../utils";
 
 const SkillsContainer = styled.div`
     position: relative;
@@ -39,12 +40,12 @@ const InfoLine = styled.p`
 
 export const Skills = () => {
     useEffect(() => {
-        document.title = 'Навички';
+        document.title = Language.content['skills-name'];
     }, []);
       
     return (
         <div className='info-layout skills'>
-            <div className='title'>Мої навички</div>
+            <div className='title'>{Language.content['my-skills']}</div>
             <hr className='title-hr' />
 
             <div style={{display: "flex", justifyContent: "center"}}>
@@ -55,9 +56,9 @@ export const Skills = () => {
                 </SkillsContainer>
             </div>
 
-            <InfoLine>Великі - те, в чому я впевнений, що можу реалізувати завдання</InfoLine>
-            <InfoLine>Середні - те, чим я користувався достатньо довго, але в чому я неповністю певен</InfoLine>
-            <InfoLine>Малі - те, з чим я лише знайомий/користувався нетривалий час</InfoLine>
+            <InfoLine>{Language.content['my-skills-large']}</InfoLine>
+            <InfoLine>{Language.content['my-skills-medium']}</InfoLine>
+            <InfoLine>{Language.content['my-skills-small']}</InfoLine>
         </div>
     )
 };

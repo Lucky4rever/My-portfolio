@@ -1,6 +1,5 @@
 import styled from 'styled-components';
-import { ProjectProps } from '../utils';
-import img from '../assets/img/projects/three_ico_large-playstore.png'
+import { Language, ProjectProps } from '../utils';
 
 const ProjectTyle = styled.div`
     box-sizing: border-box;
@@ -77,7 +76,6 @@ const Reference = styled.a`
 `;
 
 const Project = (props: ProjectProps) => {
-        console.log(img)
     return (
         <ProjectTyle className={props.link === null ? "" : "hoverable"}>
             <Reference href={props.link ?? undefined}>
@@ -89,7 +87,7 @@ const Project = (props: ProjectProps) => {
                 <ProjectDescription>
                     <span>
                         {props.description}
-                        {props.link === null ? (<b>(Посилання відсутнє)</b>) : ''}
+                        {props.link === null ? (<b>({Language.content['missing-link']})</b>) : ''}
                     </span>
                 </ProjectDescription>
             </Reference>

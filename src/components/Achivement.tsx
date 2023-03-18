@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { AchivementProps } from '../utils';
+import { AchivementProps, Language } from '../utils';
 
 const AchivementTyle = styled.div`
     box-sizing: border-box;
@@ -80,8 +80,8 @@ const Achivement = (props: AchivementProps) => {
                 </AchivementPreview>
                 <AchivementDescription>
                     <span>
-                        {props.description}
-                        {props.link === null ? (<b>(Посилання відсутнє)</b>) : ''}
+                        {props.description[Language.name]}
+                        {props.link === null ? (<b>({Language.content['missing-link']})</b>) : ''}
                     </span>
                 </AchivementDescription>
             </Reference>

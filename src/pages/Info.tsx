@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import styled from 'styled-components';
 import { Photo } from '../components';
+import { Language } from "../utils";
 
 const InfoLine = styled.p`
     font-size: 30px;
@@ -12,21 +13,21 @@ const InfoLine = styled.p`
 
 function Info() {
     useEffect(() => {
-        document.title = 'Портфоліо';
+        document.title = Language.content['home-name'];
     }, []);
 
     return(
         <div className='info-layout with-photo'>
-            <div className='title'>Портфоліо</div>
+            <div className='title'>{Language.content['home-name']}</div>
             <hr className='title-hr' />
             <div>
                 <Photo />
-                <InfoLine>Мене звати Снігур Павло. Мені 19.</InfoLine>
-                <InfoLine>Навчаюсь в КПІ на 2 курсі.</InfoLine>
-                <InfoLine>Досвід роботи: фріланс (3 місяці).</InfoLine>
-                <InfoLine>Рівень англійського: B1 (Intermediate).</InfoLine>
-                <InfoLine>Цікавить Android та WEB-розробка. Також є досвід в багатьох інших мовах.</InfoLine>
-                <InfoLine>Мій <a href='https://github.com/Lucky4rever' className='gradient-link'>GitHub
+                <InfoLine>{Language.content['short-info']}</InfoLine>
+                <InfoLine>{Language.content['shchedule']}</InfoLine>
+                <InfoLine>{Language.content['experience']}</InfoLine>
+                <InfoLine>{Language.content['english-level']}</InfoLine>
+                <InfoLine>{Language.content['interests']}</InfoLine>
+                <InfoLine>{Language.content['links-start']} <a href='https://github.com/Lucky4rever' className='gradient-link'>GitHub
                 </a>, <a href='https://t.me/Lackych' className='gradient-link'>Telegram</a>
                 </InfoLine>
             </div>

@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Achivement } from '../components';
-import { AchivementProps } from '../utils';
+import { AchivementProps, Language } from '../utils';
 
 const Achivements = () => {
     let [achivements, setAahivements] = useState<AchivementProps[]>();
@@ -9,7 +9,7 @@ const Achivements = () => {
         setAahivements(AllAchivements.children);
     }
     useEffect(() => {
-        document.title = 'Досягнення';
+        document.title = Language.content['achivements-name'];
 
         const fillAchivements = async() => {
             try {
@@ -22,10 +22,10 @@ const Achivements = () => {
     }, []);
     return (
         <div className='info-layout skills'>
-            <div className='title'>Мої досягнення</div>
+            <div className='title'>{Language.content['my-achivements']}</div>
             <hr className='title-hr' />
             <div className='all-achivements'>
-                {achivements === undefined ? <div>Loading...</div> : achivements?.length === 0 ? <div>There is nothing</div> : 
+                {achivements === undefined ? <div>{Language.content['loading']}</div> : achivements?.length === 0 ? <div>{Language.content['there-is-nothing']}</div> : 
                 achivements.map((achivement: AchivementProps, key: number) => {
                     return <Achivement 
                         key={key} 

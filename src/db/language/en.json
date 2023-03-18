@@ -1,0 +1,22 @@
+{
+    "home-name": "Portfolio",
+    "name": "Snigur Pavlo",
+    "short-info": "My name is Snigur Pavlo. I am 19.",
+    "shchedule": "I study at KPI in the 2nd year.",
+    "experience": "Work experience: freelance (3 months).",
+    "english-level": "English level: B1 (Intermediate).",
+    "interests": "Interested in Android and WEB development. There is also experience in many other languages.",
+    "links-start": "My",
+    "skills-name": "Skills",
+    "my-skills": "My skills",
+    "my-skills-large": "Big ones are things that I am sure I can do",
+    "my-skills-medium": "Mediums are something I've used for a long time, but I'm not entirely sure",
+    "my-skills-small": "Mali is something I'm only familiar with/used for a short time",
+    "projects-name": "Projects",
+    "my-projects": "My Pprojects",
+    "achivements-name": "Achivements",
+    "my-achivements": "My achivements",
+    "missing-link": "The link is missing",
+    "loading": "Loading...",
+    "there-is-nothing": "Oops! There is nothing here"
+}

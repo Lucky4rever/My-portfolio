@@ -2,9 +2,12 @@
     "label": "achivements",
     "children": [
         {
-            "img": "/my-portfolio/static/media/INT20H-2023.21ed93c2e8e8aff6917b.png", 
+            "img": "https://github.com/Lucky4rever/my-portfolio/blob/master/src/assets/img/achivements/INT20H-2023.png?raw=true", 
             "link": null,
-            "description": "Друге місце на хакатоні INT20H в 2023 році у категорії 'WEB Developement' у складі команди LuckyDev."
+            "description": {
+                "ua":  "Друге місце на хакатоні INT20H в 2023 році у категорії 'WEB Developement' у складі команди LuckyDev.",
+                "en":  "2nd place at the INT20H hackathon in 2023 in the 'WEB Developement' category as part of the LuckyDev team."
+            }
         }
     ]
 }

@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import photo from '../assets/img/photo.jpg'
+import { Language } from '../utils';
 
 export const PhotoLayout = styled.div`
     position: absolute;
@@ -62,7 +63,7 @@ const Photo = () => {
     return (
         <PhotoLayout>
             <img src={photo} alt='' />
-            <span>Снігур Павло</span>
+            <span>{Language.content['name']}</span>
         </PhotoLayout>
     )
 };

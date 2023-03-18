@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Project } from '../components';
-import { ProjectProps } from '../utils';
+import { Language, ProjectProps } from '../utils';
 
 const Projects = () => {
     let [projects, setProjects] = useState<ProjectProps[]>();
@@ -9,7 +9,7 @@ const Projects = () => {
         setProjects(AllProjects.children);
     }
     useEffect(() => {
-        document.title = 'Проекти';
+        document.title = Language.content['projects-name'];
         
         const fillProjects = async() => {
             try {
@@ -23,10 +23,10 @@ const Projects = () => {
     
     return (
         <div className='info-layout skills'>
-            <div className='title'>Мої проекти</div>
+            <div className='title'>{Language.content['my-projects']}</div>
             <hr className='title-hr' />
             <div className='all-projects'>
-                {projects === undefined ? <div>Loading...</div> : projects?.length === 0 ? <div>There is nothing</div> : 
+                {projects === undefined ? <div>{Language.content['loading']}</div> : projects?.length === 0 ? <div>{Language.content['there-is-nothing']}</div> : 
                 projects.map((project: ProjectProps, key: number) => {
                     return <Project 
                         key={key} 

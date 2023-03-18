@@ -1,21 +1,24 @@
 import { Header } from './components';
 import { Info, Skills, Projects, PageNotFound, Achivements } from './pages';
+import { Language } from './utils';
+
+const startLink = "/" + Language.name;
 
 const AppRoutes = [
   {
-    path: '/my-portfolio/',
+    path: startLink + '/my-portfolio/',
     element: <><Info /><Header /></>
   },
   {
-    path: '/my-portfolio/skills',
+    path: startLink + '/my-portfolio/skills',
     element: <><Skills /><Header /></>
   },
   {
-    path: '/my-portfolio/projects',
+    path: startLink + '/my-portfolio/projects',
     element: <><Projects /><Header /></>
   },
   {
-    path: '/my-portfolio/achivements',
+    path: startLink + '/my-portfolio/achivements',
     element: <><Achivements /><Header /></>
   },
   {

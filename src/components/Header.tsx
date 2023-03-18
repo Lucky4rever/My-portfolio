@@ -2,6 +2,8 @@ import styled from 'styled-components';
 import achivements from '../assets/img/achivements.png';
 import skills from '../assets/img/skills.png';
 import projects from '../assets/img/projects.png';
+import langs from '../assets/img/langs.png';
+import { Language, LanguageToggler } from '../utils';
 
 const HeaderBlock = styled.header`
     position: fixed;
@@ -89,6 +91,9 @@ const NavbarItem = styled.a`
         border-left: 1px solid var(--border-color);
         border-right: 1px solid var(--border-color);
     }
+    :active {
+        border: 1px solid transparent;
+    }
     > span {
         display: block;
         @media (max-width: 768px) {
@@ -98,24 +103,34 @@ const NavbarItem = styled.a`
 `;
  
 const Header = () => {
+    const startLink = "/" + Language.name;
+
     return (
         <HeaderBlock>
             <Navbar>
-                <NavbarBrand href='/my-portfolio'>
-                    <span>Портфоліо</span>
+                <NavbarBrand href={startLink + '/my-portfolio'}>
+                    <span>{Language.content['home-name']}</span>
                 </NavbarBrand>
+
                 <Collapse>
-                    <NavbarItem href='/my-portfolio/skills'>
-                    <Logo src={skills} />
-                        <span>Навички</span>
+                    <NavbarItem href={startLink + '/my-portfolio/skills'}>
+                        <Logo src={skills} />
+                        <span>{Language.content['skills-name']}</span>
                     </NavbarItem>
-                    <NavbarItem href='/my-portfolio/projects'>
-                    <Logo src={projects} />
-                        <span>Проекти</span>
+
+                    <NavbarItem href={startLink + '/my-portfolio/projects'}>
+                        <Logo src={projects} />
+                        <span>{Language.content['projects-name']}</span>
                     </NavbarItem>
-                    <NavbarItem href='/my-portfolio/achivements'>
-                    <Logo src={achivements} />
-                        <span>Досягнення</span>
+
+                    <NavbarItem href={startLink + '/my-portfolio/achivements'}>
+                        <Logo src={achivements} />
+                        <span>{Language.content['achivements-name']}</span>
+                    </NavbarItem>
+
+                    <NavbarItem href={LanguageToggler()}>
+                        <Logo src={langs} />
+                        <span>UA/EN</span>
                     </NavbarItem>
                 </Collapse>
             </Navbar>
