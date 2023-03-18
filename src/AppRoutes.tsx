@@ -6,19 +6,19 @@ const startLink = "/" + Language.name;
 
 const AppRoutes = [
   {
-    path: startLink + '/my-portfolio/',
+    path: '/my-portfolio' + startLink,
     element: <><Info /><Header /></>
   },
   {
-    path: startLink + '/my-portfolio/skills',
+    path: '/my-portfolio' + startLink + '/skills',
     element: <><Skills /><Header /></>
   },
   {
-    path: startLink + '/my-portfolio/projects',
+    path: '/my-portfolio' + startLink + '/projects',
     element: <><Projects /><Header /></>
   },
   {
-    path: startLink + '/my-portfolio/achivements',
+    path: '/my-portfolio' + startLink + '/achivements',
     element: <><Achivements /><Header /></>
   },
   {

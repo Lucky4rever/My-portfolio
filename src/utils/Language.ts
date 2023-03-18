@@ -8,23 +8,25 @@ const LanguageList = [
 
 export const LanguageToggler = () => {
     let isThisNewLanguage: boolean = false;
-    const languageFromLink = window.location.pathname.slice(1, 3);
-    const pathname = window.location.pathname.slice(3);
+    const windowPathname = window.location.pathname;
+    const languageFromLink = windowPathname.slice(14, 16);
+    const pathname = windowPathname.slice(16, windowPathname.length);
 
     for (const language of LanguageList) {
         if (isThisNewLanguage)
-            return "/" + language.name + pathname;
+            return "/my-portfolio/" + language.name + pathname;
 
         if (language.name === languageFromLink)
             isThisNewLanguage = true;
     }
 
-    return "/" + LanguageList[0].name + pathname;
+    return "/my-portfolio/" + LanguageList[0].name + pathname;
 };
 
 function getLanguage() {
     let language = LanguageList[0];
-    const languageFromLink = window.location.pathname.slice(1, 3);
+    const windowPathname = window.location.pathname;
+    const languageFromLink = windowPathname.slice(14, 16);
 
     LanguageList.forEach((lang) => {
         if (lang.name === languageFromLink)

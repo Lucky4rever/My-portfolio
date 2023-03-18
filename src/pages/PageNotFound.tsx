@@ -47,7 +47,7 @@ const PageNotFound = () => {
         <PageNotFoundBlock>
             <Title>Error 404</Title>
             <Text>There is no such page here.</Text>
-            <Text>You can return to <a className="gradient-link" href={"/" + Language.name + "/my-portfolio"}>main page</a></Text>
+            <Text>You can return to <a className="gradient-link" href={"/my-portfolio/" + Language.name}>main page</a></Text>
             <Comment>Or just keep looking at these cute peas.</Comment>
         </PageNotFoundBlock>
     )

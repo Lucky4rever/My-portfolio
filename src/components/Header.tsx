@@ -108,22 +108,22 @@ const Header = () => {
     return (
         <HeaderBlock>
             <Navbar>
-                <NavbarBrand href={startLink + '/my-portfolio'}>
+                <NavbarBrand href={'/my-portfolio' + startLink}>
                     <span>{Language.content['home-name']}</span>
                 </NavbarBrand>
 
                 <Collapse>
-                    <NavbarItem href={startLink + '/my-portfolio/skills'}>
+                    <NavbarItem href={'/my-portfolio' + startLink + '/skills'}>
                         <Logo src={skills} />
                         <span>{Language.content['skills-name']}</span>
                     </NavbarItem>
 
-                    <NavbarItem href={startLink + '/my-portfolio/projects'}>
+                    <NavbarItem href={'/my-portfolio' + startLink + '/projects'}>
                         <Logo src={projects} />
                         <span>{Language.content['projects-name']}</span>
                     </NavbarItem>
 
-                    <NavbarItem href={startLink + '/my-portfolio/achivements'}>
+                    <NavbarItem href={'/my-portfolio' + startLink + '/achivements'}>
                         <Logo src={achivements} />
                         <span>{Language.content['achivements-name']}</span>
                     </NavbarItem>
