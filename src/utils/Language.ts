@@ -12,14 +12,13 @@ export const LanguageToggler = () => {
     const pathname = window.location.pathname.slice(3);
 
     for (const language of LanguageList) {
-        if (isThisNewLanguage) {
-            console.log ("/" + LanguageList[0].name + pathname)
+        if (isThisNewLanguage)
             return "/" + language.name + pathname;
-        }
+
         if (language.name === languageFromLink)
             isThisNewLanguage = true;
     }
-    console.log ("/" + LanguageList[0].name + pathname)
+
     return "/" + LanguageList[0].name + pathname;
 };
 

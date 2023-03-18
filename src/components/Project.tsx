@@ -86,7 +86,7 @@ const Project = (props: ProjectProps) => {
                 </ProjectPreview>
                 <ProjectDescription>
                     <span>
-                        {props.description}
+                        {props.description[Language.name]}
                         {props.link === null ? (<b>({Language.content['missing-link']})</b>) : ''}
                     </span>
                 </ProjectDescription>

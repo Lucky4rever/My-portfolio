@@ -4,17 +4,26 @@
         {
             "img": "https://raw.githubusercontent.com/Lucky4rever/my-portfolio/master/src/assets/img/projects/test_task_hello_Evano.png", 
             "link": "https://lucky4rever.github.io/Test-task-Hello-Evano/",
-            "description": "Проект на замовлення, зроблений Pixel-Perfect версткою."
+            "description": {
+                "ua": "Проект на замовлення, зроблений Pixel-Perfect версткою.",
+                "en": "Custom design made by Pixel-Perfect layout."
+            }
         },
         {
             "img": "https://raw.githubusercontent.com/Lucky4rever/my-portfolio/master/src/assets/img/projects/three_ico_large-playstore.png",
             "link": null,
-            "description": "Інтерактивна книга, написана на Kotlin для KotlinConf'23."
+            "description": {
+                "ua": "Інтерактивна книга, написана на Kotlin для KotlinConf'23.",
+                "en": "An interactive book written in Kotlin for KotlinConf'23."
+            }
         },
         {
             "img": "https://raw.githubusercontent.com/Lucky4rever/my-portfolio/master/src/assets/img/projects/INT20H-2023.jpg",
             "link": null,
-            "description": "Проект для хакатону INT20H, який писався командою LuckyDev впродовж 20 годин."
+            "description": {
+                "ua": "Проект для хакатону INT20H, який писався командою LuckyDev впродовж 20 годин.",
+                "en": "A project for the INT20H hackathon, which was written by the LuckyDev team in 20 hours."
+            }
         }
     ]
 }
